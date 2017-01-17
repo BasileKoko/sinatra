@@ -1,0 +1,12 @@
+<%if @names %>
+  <h1>'My name is <%=@names%>'</h1>
+<% end%>
+
+<div style = 'border: 2px dashed red'>
+  <img src='http://bit.ly/1eze8aE'>
+  <br>
+  <form action="/named-cat" method="post">
+    <input type="text" name="name">
+    <input type="submit">
+  </form>
+</div>
